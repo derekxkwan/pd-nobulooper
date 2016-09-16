@@ -1,4 +1,4 @@
-#N canvas 418 112 1006 784 10;
+#N canvas 416 114 1006 784 10;
 #X obj 241 324 soundfiler;
 #X obj 240 226 openpanel;
 #X obj 158 463 pdkm/dkwesley~ 32 1;
@@ -232,3 +232,4 @@
 #X connect 52 0 29 0;
 #X connect 53 0 51 0;
 #X connect 54 0 44 0;
+#X connect 54 0 12 0;
