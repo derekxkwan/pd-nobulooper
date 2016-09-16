@@ -1,0 +1,79 @@
+#N canvas 334 195 1336 734 10;
+#X obj 100 100 cnv 15 615 355 empty empty empty 20 12 0 14 -228856
+-66577 0;
+#X obj 110 153 cnv 15 550 34 empty empty empty 20 12 0 14 -232576 -66577
+0;
+#X obj 112 363 cnv 15 550 80 empty empty empty 20 12 0 14 -203904 -66577
+0;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array \$1-stut\$2 32 float 3;
+#A 0 1 0.950003 0.950003 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1;
+#X coords 0 5 32 1 550 80 1 0 0;
+#X restore 112 363 graph;
+#X obj 667 174 vsl 20 80 0 1 0 0 empty empty vol 0 -9 0 10 -257985
+-1 -1 0 1;
+#X obj 667 417 nbx 2 15 1 32 0 1 empty \$1-nrndr nrnd 0 -8 0 12 -45076
+-257985 -1 1 256;
+#X obj 667 348 nbx 3 15 -1 1 0 0 empty \$1-cospr pan 0 -8 0 12 -45076
+-257985 -1 0 256;
+#X obj 667 380 bng 17 250 50 0 empty empty rand 0 -7 0 10 -258113 -1
+-1;
+#X obj 693 206 tgl 17 0 empty empty tgl 0 -7 0 10 -257985 -33289 -1
+0 1;
+#X obj 670 317 nbx 2 15 1 16 0 0 empty \$1-dsr dsamp 0 -8 0 12 -45076
+-257985 -1 1 256;
+#X obj 690 173 bng 17 250 50 0 empty empty load 0 -7 0 10 -258113 -1
+-1;
+#X obj 110 335 hsl 550 15 0 32 0 0 empty \$1-count empty -2 -8 0 10
+-1 -260097 -1 0 1;
+#X obj 110 118 cnv 15 550 34 empty empty empty 20 12 0 14 -204786 -66577
+0;
+#X obj 110 223 cnv 15 550 34 empty empty empty 20 12 0 14 -232576 -66577
+0;
+#X obj 110 188 cnv 15 550 34 empty empty empty 20 12 0 14 -204786 -66577
+0;
+#X obj 110 310 cnv 15 550 17 empty empty empty 20 12 0 14 -261234 -66577
+0;
+#X obj 110 258 cnv 15 550 34 empty empty empty 20 12 0 14 -204786 -66577
+0;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array \$1-seq\$2 32 float 3;
+#A 0 -1.82857 -1.82857 -1.82857 -1.94285 -2 -2 -2 -2 -1.88571 -1.77143
+-1.71429 -1.71429 -1.77143 -1.77143 -1.77143 -1.77143 -1.71429 -1.6
+-1.65714 -1.71429 -1.82857 -1.88571 -2 -2 -2 -2 -1.88571 -2 -2.17142
+-2.17142 -2.17142 -2;
+#X coords 0 10 32 -2 550 210 1 0 0;
+#X restore 109 118 graph;
+#X obj 110 293 cnv 15 550 17 empty empty empty 20 12 0 14 -191407 -66577
+0;
+#X obj 670 280 nbx 2 15 1 32 0 1 empty \$1-brr bitres 0 -8 0 12 -45076
+-257985 -1 32 256;
+#X obj 693 236 bng 17 250 50 0 empty empty rst 0 -7 0 10 -258113 -1
+-1;
+#X obj 726 265 s \$1-vol\$2;
+#X obj 748 201 s \$1-tgl\$2;
+#X obj 721 296 s \$1-br\$2;
+#X obj 735 326 s \$1-ds\$2;
+#X obj 739 356 s \$1-cosp\$2;
+#X obj 748 160 s \$1-load\$2;
+#X obj 761 227 s \$1-rst\$2;
+#X obj 759 410 s \$1-rnd\$2;
+#X obj 754 445 s \$1-nrnd\$2;
+#X obj 763 79 loadbang;
+#X obj 671 126 nbx 1 25 1 32 0 1 empty empty num 0 -8 0 15 -257985
+-33289 -1 1 256;
+#X obj 772 107 f \$2;
+#X connect 4 0 21 0;
+#X connect 5 0 29 0;
+#X connect 6 0 25 0;
+#X connect 7 0 28 0;
+#X connect 8 0 22 0;
+#X connect 9 0 24 0;
+#X connect 10 0 26 0;
+#X connect 19 0 23 0;
+#X connect 20 0 27 0;
+#X connect 30 0 20 0;
+#X connect 30 0 32 0;
+#X connect 32 0 31 0;
+#X coords 0 -1 1 1 615 355 1 100 100;
