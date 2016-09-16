@@ -1,4 +1,4 @@
-#N canvas 343 315 900 540 10;
+#N canvas 341 317 900 540 10;
 #X obj 100 100 cnv 15 615 370 empty empty empty 20 12 0 14 -228856
 -66577 0;
 #X obj 110 173 cnv 15 550 34 empty empty empty 20 12 0 14 -232576 -66577
@@ -63,8 +63,8 @@
 #X obj 653 115 nbx 1 22 1 32 0 1 empty empty num 0 -8 0 15 -257985
 -33289 -1 1 256;
 #X obj 774 74 f \$2;
-#X symbolatom 433 118 30 0 0 0 - - -, f 30;
-#X obj 483 75 r \$1-name\$2;
+#X symbolatom 428 115 30 0 0 0 - - -, f 30;
+#X obj 496 46 r \$1-name\$2;
 #X obj 247 114 bng 17 250 50 0 empty empty pload 0 -7 0 10 -258113
 -1 -1;
 #X text 189 103 PRESETS;
@@ -73,7 +73,7 @@
 #X obj 334 115 bng 17 250 50 0 empty empty psave 0 -7 0 10 -258113
 -1 -1;
 #X obj 366 117 nbx 2 15 0 64 0 0 empty empty psave 0 -8 0 12 -45076
--257985 -1 1 256;
+-257985 -1 0 256;
 #X obj 724 137 s \$1-sndload\$2;
 #X obj 208 36 s \$1-plbang\$2;
 #X obj 236 63 s \$1-plnum\$2;
@@ -87,6 +87,7 @@
 #X obj 749 434 s \$1-flbang\$2;
 #X obj 743 483 s \$1-fsbang\$2;
 #X obj 300 11 loadbang;
+#X msg 478 73 set \$1;
 #X connect 4 0 21 0;
 #X connect 5 0 28 0;
 #X connect 6 0 25 0;
@@ -99,7 +100,7 @@
 #X connect 29 0 20 0;
 #X connect 29 0 31 0;
 #X connect 31 0 30 0;
-#X connect 33 0 32 0;
+#X connect 33 0 50 0;
 #X connect 34 0 40 0;
 #X connect 36 0 41 0;
 #X connect 37 0 42 0;
@@ -107,4 +108,5 @@
 #X connect 45 0 48 0;
 #X connect 46 0 47 0;
 #X connect 49 0 36 0;
+#X connect 50 0 32 0;
 #X coords 0 -1 1 1 615 370 1 100 100;
