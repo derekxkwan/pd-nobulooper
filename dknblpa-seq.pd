@@ -1,4 +1,4 @@
-#N canvas 337 321 900 540 10;
+#N canvas 331 327 900 540 10;
 #X obj 100 100 cnv 15 615 370 empty empty empty 20 12 0 14 -228856
 -66577 0;
 #X obj 110 173 cnv 15 550 34 empty empty empty 20 12 0 14 -232576 -66577
@@ -25,8 +25,8 @@
 -257985 -1 1 256;
 #X obj 689 114 bng 17 250 50 0 empty empty snd 0 -7 0 10 -258113 -1
 -1;
-#X obj 110 355 hsl 550 15 0 32 0 0 empty \$1-count empty -2 -8 0 10
--1 -260097 -1 0 1;
+#X obj 110 355 hsl 550 15 0 32 0 0 empty pdkcnt empty -2 -8 0 10 -1
+-260097 -1 0 1;
 #X obj 110 138 cnv 15 550 34 empty empty empty 20 12 0 14 -204786 -66577
 0;
 #X obj 110 243 cnv 15 550 34 empty empty empty 20 12 0 14 -232576 -66577
@@ -89,6 +89,7 @@
 #X obj 300 11 loadbang;
 #X msg 478 73 set \$1;
 #X msg 649 34 0;
+#X text 18 19 arg1:dollar 0 \, arg2: num;
 #X connect 4 0 21 0;
 #X connect 5 0 28 0;
 #X connect 6 0 25 0;
