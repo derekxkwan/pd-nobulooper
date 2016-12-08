@@ -1,0 +1,31 @@
+#N canvas 879 176 563 640 10;
+#X obj 100 100 cnv 15 250 370 empty empty empty 20 12 0 14 -260097
+-66577 0;
+#X obj 134 139 cnv 15 200 300 empty empty empty 20 12 0 14 -228856
+-66577 0;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array \$1-loc\$2 10 float 3;
+#A 0 0 0 0.00333333 0.00666666 0.00666666 0.00333333 0.00333333 0.00333333
+0.00333333 0.00333333;
+#X coords 0 1 10 0 200 300 1 0 0;
+#X restore 135 138 graph;
+#X obj 423 16 loadbang;
+#X obj 283 115 nbx 1 22 1 32 0 1 empty empty num 0 -8 0 15 -257985
+-33289 -1 1 256;
+#X obj 395 47 f \$2;
+#X text 138 74 arg1:dollar 0 \, arg2:soundnum;
+#X obj 202 112 bng 22 250 50 0 empty empty load 0 -7 0 10 -258113 -1
+-1;
+#X obj 405 131 s \$1-llbang\$2;
+#X obj 244 112 bng 22 250 50 0 empty empty save 0 -7 0 10 -258113 -1
+-1;
+#X obj 404 176 s \$1-lsbang\$2;
+#X obj 447 52 pack \$1 \$2;
+#X msg 418 91 \; \$1-loc\$2 const 0;
+#X connect 3 0 5 0;
+#X connect 3 0 11 0;
+#X connect 5 0 4 0;
+#X connect 7 0 8 0;
+#X connect 9 0 10 0;
+#X connect 11 0 12 0;
+#X coords 0 -1 1 1 250 370 1 100 100;
